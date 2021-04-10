@@ -470,17 +470,23 @@ function findhero(){
                 threshold:0.7
             });
                 if(point){
-                    let point2=images.findImage(captureScreen(),lizhuang,{
-                        region:[point.x,point.y,400,280],
-                        threshold:0.7
-                    });
-                    console.log(point);
-                    console.log("找到英灵了");
-                    if(point2){
+                    if(y==0){
                         sleep(1200)
                         click(point.x+130,point.y+130);
-                        console.log("找到礼装了");
                         break;
+                    }else{
+                        let point2=images.findImage(captureScreen(),lizhuang,{
+                            region:[point.x,point.y,400,280],
+                            threshold:0.7
+                        });
+                        console.log(point);
+                        console.log("找到英灵了");
+                        if(point2){
+                            sleep(1200)
+                            click(point.x+130,point.y+130);
+                            console.log("找到礼装了");
+                            break;
+                        }
                     }
                 }
                 swipe(864,764,1000,464,800);
