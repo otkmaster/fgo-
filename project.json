@@ -1,0 +1,16 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "57EA36FC-4",
+    "build_number": 4,
+    "build_time": 1618078832379
+  },
+  "useFeatures": [],
+  "icon": "res/logo.png",
+  "main": "main.js",
+  "name": "fgo助手",
+  "packageName": "com.auto.fgo",
+  "scripts": {},
+  "versionCode": 1,
+  "versionName": "1.0.0"
+}
